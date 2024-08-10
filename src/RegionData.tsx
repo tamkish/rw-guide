@@ -1,9 +1,4 @@
-import Color, {
-  ColorConstructor,
-  ColorObject,
-  ColorTypes,
-  PlainColorObject,
-} from "colorjs.io";
+import { PlainColorObject } from "colorjs.io";
 
 export type RegionData = {
   id: string;

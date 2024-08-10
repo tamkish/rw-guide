@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Crossroad } from "./Crossroad.tsx";
 import { RainMap } from "./RainMap.tsx";
 
@@ -13,3 +13,4 @@ function App() {
 }
 
 export default App;
+//todo meta tags to index.html (author, ...)

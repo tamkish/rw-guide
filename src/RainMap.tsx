@@ -150,7 +150,7 @@ export const RainMap = () => {
     if (!selectedRegionData) return undefined;
 
     return selectedRegionData.parts.find(
-      (value, index) => index == hoveredRegion?.part,
+      (_, index) => index == hoveredRegion?.part,
     );
   }, [hoveredRegion?.part, selectedRegionData]);
 
@@ -219,11 +219,14 @@ export const RainMap = () => {
         />
       </div>
       <p>
+        (being) made by tamkish
+        <br />
         this is very much work in progress.
         <br />
-        send me your feedback/ideas on discord (
-        <a href={"discord.com/users/323104013165789184"}>tamkish</a>) or on
-        github
+        <br />
+        send me your feedback/ideas on
+        <a href={"discord.com/users/323104013165789184"}>discord</a> or on
+        <a href={"https://github.com/tamkish/rw-guide/issues"}>github</a>
       </p>
     </>
   );

@@ -1,5 +1,4 @@
-import { FC, useMemo } from "react";
-import { getRandomColor } from "./colors.ts";
+import { FC } from "react";
 import { Grid } from "./Grid.tsx";
 import { RegionData } from "./RegionData.tsx";
 import Color from "colorjs.io";
@@ -50,8 +49,8 @@ export const Region: FC<{
                 backgroundColor: new Color(currentColor).display(),
                 width: part.w * Grid,
                 height: part.h * Grid,
-                top: part.y * Grid,
-                left: part.x * Grid,
+                top: (part.y ?? 0) * Grid,
+                left: (part.x ?? 0) * Grid,
               }}
             />
           );
